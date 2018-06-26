@@ -1,0 +1,21 @@
+{
+  "name": "common-array-utils",
+  "version": "0.0.1",
+  "description": "Common JavaScript Array based utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js",
+    "prepublish": "npm test"
+  },
+  "keywords": [
+    "common",
+    "array",
+    "utils",
+    "array",
+    "utils",
+    "common",
+    "utils"
+  ],
+  "author": "Nick Walter",
+  "license": "MIT"
+}
