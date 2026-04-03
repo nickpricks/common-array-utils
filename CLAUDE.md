@@ -10,7 +10,7 @@ A small, zero-dependency npm utility library (`common-array-utils`) that provide
 
 - **Run tests:** `npm test` (runs `node index.test.js` — no test framework, uses manual assertions with `throw`)
 - **Publish:** `npm publish` (tests run via `prepublishOnly`; auto-creates + pushes git tag via `postpublish`)
-- **CI publish:** GitHub Actions publishes on push to `master` when `package.json` changes — requires `NPM_TOKEN` secret in GitHub repo settings.
+- **CI publish:** GitHub Actions publishes on push to `master` when `package.json` changes via npm Trusted Publishing (OIDC) — no `NPM_TOKEN` secret needed. Configured on npmjs.com under package → Settings → Publishing.
 
 ## Architecture
 

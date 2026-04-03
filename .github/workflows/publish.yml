@@ -49,8 +49,7 @@ jobs:
       - name: Publish to npm
         if: steps.version_check.outputs.exists == 'false'
         run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # NODE_AUTH_TOKEN is set automatically by setup-node via OIDC (Trusted Publishing)
 
       - name: Tag release
         if: steps.version_check.outputs.exists == 'false'
