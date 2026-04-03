@@ -37,6 +37,10 @@ validArray([]);        // false
 validArray(null);      // false
 ```
 
+## Publishing
+
+Pushing to `master` triggers automatic publish to npm via GitHub Actions (requires `NPM_TOKEN` secret). Only runs when `package.json` changes and skips if the version tag already exists.
+
 ## Tests
 ```
 npm test
